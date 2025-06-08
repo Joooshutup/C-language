@@ -1,4 +1,4 @@
-//交通工具
+// 交通工具
 #include <stdio.h>
 
 typedef struct{
