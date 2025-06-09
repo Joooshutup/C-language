@@ -1,0 +1,32 @@
+// 99乘法表 with ＊＊＊
+#include <stdio.h>
+
+int main() {
+    int stars;
+
+    // 讓使用者輸入星星數量
+    printf("請輸入想要的星星數量: ");
+    scanf("%d", &stars);
+
+    // 印出上方星星
+    for (int i = 0; i < stars; i++) {
+        printf("*");
+    }
+    printf("\n");  // 換行
+
+    // 九九乘法表 - 直式排列
+    for (int i = 1; i <= 9; i++) {  // 控制乘數 (1~9)
+        for (int j = 1; j <= 9; j++) {  // 控制被乘數 (1~9)
+            printf("%d * %d = %2d  ", j, i, j * i);
+        }
+        printf("\n");  // 換行
+    }
+
+    // 印出下方星星
+    for (int i = 0; i < stars; i++) {
+        printf("*");
+    }
+    printf("\n");  // 換行
+
+    return 0;
+}
