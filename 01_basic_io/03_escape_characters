@@ -1,0 +1,31 @@
+// 接下來示範 printf() 函式中各種特殊字符（轉義字元, Escape Characters）的使用。
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	printf("**********************");
+	
+	printf("Hello World~");
+	printf("\n");
+	printf("Hello // World");
+	printf("\n");
+	printf("Hello \"C\" World");
+	printf("\n");
+	printf("Hello \'C\' World");
+	printf("\n");
+	printf("Hello \t World");
+	printf("\n");
+	
+	printf("**********************");
+}
+
+//輸出結果：
+/*
+**********************
+Hello World~
+反斜線 Hello \ World
+雙引號 Hello "C" World
+單引號 Hello 'C' World
+跳位 Hello     World
+**********************
+*/
