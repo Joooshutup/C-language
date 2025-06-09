@@ -1,0 +1,25 @@
+// 示範了 printf() 和 scanf() 的使用
+#include <stdio.h>
+
+int main() {
+    printf("**********************");
+    printf("\n");
+    printf("**練習:輸入整數5**");
+    printf("\n");
+
+    int num;  // 宣告整數變數 num
+
+    printf("Please input a number: ");  // 提示使用者輸入數字
+    scanf("%d", &num);  // 讀取使用者輸入的數字，並存入變數 num
+
+    printf("Number is %d.\n", num);  // 顯示輸入的數字
+    return 0;
+}
+
+//輸出結果
+/*
+**********************
+**練習:輸入整數5**
+Please input a number: 5
+Number is 5.
+*/
