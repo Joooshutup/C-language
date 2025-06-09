@@ -1,0 +1,23 @@
+// sum的計算
+#include <stdio.h>
+
+int main() {
+    printf("**********************");  
+    printf("\n");
+    printf("**練習2-2:求數字和**");
+    printf("\n");
+
+    int int1, int2, sum;
+
+    printf("Please enter the first integer: ");
+    scanf("%d", &int1);  // 讀取第一個整數
+    
+    printf("Please enter the second integer: ");
+    scanf("%d", &int2);  // 讀取第二個整數
+
+    sum = int1 + int2;  // 計算總和
+
+    printf("Sum is %d.\n", sum);
+
+    return 0;
+}
